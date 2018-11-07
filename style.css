@@ -1,0 +1,925 @@
+body {
+
+  margin: 0px;
+
+}
+
+h1 {
+
+  font-family: title, "Arial", sans-serif;
+  font-size: 5.5em;
+  line-height: 1.2em;
+
+}
+
+h2 {
+
+  font-family: simple, "Avenir", "Arial", sans-serif;
+  font-size: 2em;
+  line-height: 1.2em;
+
+}
+
+/* Custom classes */
+
+.topnav {
+
+    background-color: #fff;
+    height: 86px;
+    padding-right: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+
+}
+
+.topnav a {
+
+    float: right;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 34px 6px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: simple, "Avenir", "Arial", sans-serif;
+    margin-right: 9px;
+    margin-left: 9px;
+    padding-bottom: 14px;
+    margin-bottom: 0px;
+
+}
+
+.topnav .logo {
+
+  padding-top: 18px;
+  float: left;
+
+}
+
+.topnav a:not(.logo):hover {
+
+    border-bottom-style: solid;
+    border-bottom-color: var(--color2);
+    color: var(--color2) !important;
+    border-bottom-width: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+    -webkit-transition: padding-bottom 0.1s;
+    transition: padding-bottom 0.1s;
+
+}
+
+.active {
+
+  border-bottom-style: solid;
+  border-bottom-color: var(--color1);
+  color: var(--color1) !important;
+  font-weight: bold;
+
+}
+
+.topnav .icon {
+
+    display: none;
+
+}
+
+#logoContent {
+
+  width:100px;
+  height: 50px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('logoMIT2.png');
+
+}
+
+.compressed {
+
+  width:95px !important;
+  height: 50px;
+  background-image: url('logoMIT2.png') !important;
+
+}
+
+.uncompressed {
+
+  width:190px !important;
+  height: 50px;
+  background-image: url('logoMIT2.png') !important;
+
+}
+
+div.card:hover {
+
+  box-shadow: 0px 1px 10px #555 !important;
+
+  padding: 9px;
+  margin-bottom: 8px;
+
+  transition: all 0.2s;
+
+}
+
+div.card {
+
+  width: 270px;
+  height: 414px;
+  padding: 5px;
+  margin: 20px;
+
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px #999;
+
+  background-color: #fafafa;
+
+  font-family: simple, "Avenir", "Arial", sans-serif;
+
+  display: inline-block;
+
+  transition: all 0.3s;
+
+  cursor: pointer;
+
+}
+
+div.card .cardIm {
+
+  width: auto;
+  height: 288px;
+  padding: 9px;
+
+  border-radius: 5px;
+
+  background-color: #333;
+
+  transition: all 0.3s;
+
+}
+
+div.card .cardIm .clickBox {
+
+  width: 200px;
+  height: 40px;
+  margin-top:134px;
+  margin-bottom:0px;
+
+  display: none;
+
+  color: #fff;
+
+}
+
+div.card .cardIm .clickBox::before {
+
+  content: "More about ";
+
+}
+
+div.card:hover .cardIm .clickBox {
+
+  display: block;
+
+  animation: jumpUp 0.3s;
+
+}
+
+div.card h3 {
+
+   margin-bottom: 0px;
+   margin-top: 12px;
+
+   font-family: simpleBold;
+
+}
+
+div.card h4 {
+
+  margin-top: 7px;
+
+}
+
+div.card:hover .cardIm {
+
+  width: auto;
+
+  margin: -9px;
+
+  margin-bottom: auto;
+
+  border-bottom-left-radius: 0px;
+
+  border-bottom-right-radius: 0px;
+
+}
+
+.shadow {
+
+  box-shadow: 0px 1px 10px #555;
+
+}
+
+.banner {
+
+  height: calc(100vh - 80px);
+  min-height: 450px;
+  position:sticky;
+
+}
+
+.sectionTitle {
+
+  font-family: title, "Arial", sans-serif;
+  font-size: 3.3em;
+  line-height: 1.2em;
+
+}
+
+#menuBarButton .open1 {
+
+  background-color: var(--color2);
+  width: 40px;
+  height: 7px;
+  border-radius: 4px;
+  position: fixed;
+  right: 30px;
+  top: 28px;
+  transform: rotate(0deg);
+  -webkit-transition: right 0.6s;
+  -webkit-transition: top 0.6s;
+  -webkit-transition: background-color 0.6s;
+  -webkit-transition: transform 0.2s;
+  transition: right 0.6s;
+  transition: top 0.6s;
+  transition: background-color 0.6s;
+  transition: transform 0.2s;
+
+}
+
+#menuBarButton .open2 {
+
+  background-color: var(--color2);
+  width: 40px;
+  height: 7px;
+  border-radius: 4px;
+  position: fixed;
+  right: 30px;
+  top: 52px;
+  -webkit-transition: right 0.6s;
+  -webkit-transition: top 0.6s;
+  -webkit-transition: background-color 0.6s;
+  transition: right 0.6s;
+  transition: top 0.6s;
+  transition: background-color 0.6s;
+  transform: rotate(0deg);
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+
+}
+
+#menuBarButton .open3 {
+
+  background-color: var(--color2);
+  width: 40px;
+  height: 7px;
+  border-radius: 4px;
+  position: fixed;
+  right: 30px;
+  top: 40px;
+  -webkit-transition: right 0.6s;
+  -webkit-transition: top 0.6s;
+  -webkit-transition: background-color 0.6s;
+  transition: right 0.6s;
+  transition: top 0.6s;
+  transition: background-color 0.6s;
+  transform: rotate(0deg);
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+
+}
+
+#menuBarButton.on .open1 {
+
+  background-color: var(--color1);
+  width: 40px;
+  height: 7px;
+  border-radius: 4px;
+  position: fixed;
+  right: 31px;
+  top: 43px;
+  transform: rotate(-45deg);
+  -webkit-transition: right 0.6s;
+  -webkit-transition: top 0.6s;
+  -webkit-transition: background-color 0.6s;
+  -webkit-transition: transform 0.6s;
+  transition: right 0.6s;
+  transition: top 0.6s;
+  transition: background-color 0.6s;
+  transition: transform 0.6s;
+
+}
+
+#menuBarButton.on .open2 {
+
+  background-color: var(--color1);
+  width: 40px;
+  height: 7px;
+  border-radius: 4px;
+  position: fixed;
+  right: 31px;
+  top: 43px;
+  transform: rotate(45deg);
+  -webkit-transition: right 0.6s;
+  -webkit-transition: top 0.6s;
+  -webkit-transition: background-color 0.6s;
+  -webkit-transition: transform 0.6s;
+  transition: right 0.6s;
+  transition: top 0.6s;
+  transition: background-color 0.6s;
+  transition: transform 0.6s;
+
+}
+
+#menuBarButton.on .open3 {
+
+  height: 0;
+  -webkit-transition: width 0.6s;
+  transition: width 0.6s;
+
+}
+
+.arrow, .arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+}
+
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+.social {
+
+  display: inline-block;
+  border-right-style: solid;
+  border-right-color: white;
+  border-right-width: 3px;
+
+}
+
+.socialIcon {
+
+  display: inline-block;
+  margin: 10px;
+  width: 72px;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.button {
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  border-color: var(--colorB);
+  border-width: 5px;
+  border-style: solid;
+
+  margin: 20px;
+
+  margin-top: 30px;
+
+  vertical-align: top;
+
+  display: inline-block;
+
+  font-size: 22px;
+  font-family: simple, "Avenir", "Arial", sans-serif;
+  font-weight: bold;
+
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 0px;
+
+  animation: 0.7s 0s 1 slide;
+
+}
+
+.button:hover {
+
+  box-shadow: inset 300px 0px 0px 0px var(--color2);
+  color: #fff;
+  border-color: var(--color2);
+
+}
+
+.buttonAlt {
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  border-color: var(--colorB);
+  border-width: 5px;
+  border-style: solid;
+
+  margin: 20px;
+
+  margin-top: 30px;
+
+  vertical-align: top;
+
+  display: inline-block;
+
+  font-size: 22px;
+  font-family: simple, "Avenir", "Arial", sans-serif;
+  font-weight: bold;
+
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 0px;
+
+    animation: 0.7s 0s 1 slide;
+
+}
+
+.buttonAlt:hover {
+
+  box-shadow: inset 300px 0px 0px 0px var(--color1);
+  color: #fff;
+  border-color: var(--color1);
+
+}
+
+.buttonDark {
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  border-color: var(--colorW);
+  border-width: 5px;
+  border-style: solid;
+
+  color: #fff;
+
+  margin: 20px;
+
+  margin-top: 30px;
+
+  vertical-align: top;
+
+  display: inline-block;
+
+  font-size: 22px;
+  font-family: simple, "Avenir", "Arial", sans-serif;
+  font-weight: bold;
+
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 0px;
+
+    animation: 0.7s 0s 1 slide;
+
+}
+
+.buttonDark:hover {
+
+  box-shadow: inset 300px 0px 0px 0px var(--color2);
+  color: #fff;
+  border-color: var(--color2);
+
+}
+
+.buttonDarkAlt {
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  border-color: var(--colorW);
+  border-width: 5px;
+  border-style: solid;
+
+  color: #fff;
+
+  margin: 20px;
+
+  margin-top: 30px;
+
+  vertical-align: top;
+
+  display: inline-block;
+
+  font-size: 22px;
+  font-family: simple, "Avenir", "Arial", sans-serif;
+  font-weight: bold;
+
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 0px;
+
+    animation: 0.7s 0s 1 slide;
+
+}
+
+.buttonDarkAlt:hover {
+
+  box-shadow: inset 300px 0px 0px 0px var(--color1);
+  color: #fff;
+  border-color: var(--color1);
+
+}
+
+.sponsorLogo {
+
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+
+}
+
+.person {
+
+  height: 100px;
+  width: 300px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.person img {
+
+  display: inline-block;
+
+}
+
+.person h1 {
+
+  font-size: 30px !important;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  display: inline-block;
+
+}
+
+.person h2 {
+
+  font-size: 30px !important;
+  font-weight: normal;
+  color: #fff;
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+  display: inline-block;
+
+}
+
+.selectedBox {
+
+  border-width: 5px;
+
+  border-color: #fff;
+
+  border-style: solid;
+
+}
+
+.imageProjects {
+
+  width: 55%;
+  height: 300px;
+  display: inline-block;
+  object-fit: cover;
+
+}
+
+.imageProjectsAlt {
+
+  width: 43%;
+  height: 300px;
+  display: inline-block;
+  object-fit: cover;
+
+}
+
+.imagePeople {
+
+  width: calc(80vw - 450px);
+  height: 300px;
+  display: inline-block;
+  object-fit: cover;
+
+}
+
+.imageProjectsFirst {
+
+  width: calc(80vw - 450px);
+  height: 370px;
+  object-fit: cover
+
+}
+
+/* Responsive displays */
+
+@media screen and (max-width: 700px) {
+
+  .topnav a:not(:first-child) {
+
+    display: none;
+
+  }
+
+  .topnav a.icon {
+
+    float: right;
+    display: block;
+
+  }
+
+  h1 {
+
+    font-family: title, "Arial", sans-serif;
+    font-size: 3.4em;
+    line-height: 1.2em;
+
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  .imagePeople {
+
+    width: 80vw;
+    height: 300px;
+    display: inline-block;
+    object-fit: cover;
+
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .topnav.responsive {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    -webkit-transition: height 0.2s;
+    transition: height 0.2s;
+
+  }
+
+  .topnav.responsive a.icon {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+
+  .topnav.responsive a {
+
+    float: none;
+    display: block;
+    text-align: left;
+
+  }
+
+  .topnav.responsive a:not(.logo) {
+
+    animation: menuItemsMoveIn 0.2s 1 0s linear;
+
+  }
+
+}
+
+@media screen and (max-width: 779px) {
+
+  .social {
+
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 3px;
+
+    margin-bottom: 20px;
+
+  }
+
+  .shaped {
+
+    display: none;
+
+  }
+
+}
+
+@media screen and (max-width: 885px) {
+
+  .imageProjects {
+
+    width: 80vw;
+    height: 300px;
+    display: inline-block;
+    object-fit: cover;
+
+  }
+
+  .imageProjectsAlt {
+
+    width: 80vw;
+    height: 200px;
+    display: inline-block;
+    object-fit: cover;
+
+  }
+
+  .imageProjectsFirst {
+
+    width: 80vw;
+    height: 370px;
+    object-fit: cover
+
+  }
+
+}
+
+/* Predefined variables */
+
+@font-face {
+
+    font-family: simple;
+    src: url(avenir-roman.ttf);
+
+}
+
+@font-face {
+
+    font-family: simpleBold;
+    src: url(Avenir-Black.ttf);
+
+}
+
+@font-face {
+
+    font-family: title;
+    src: url(Cloud-Bold.otf);
+
+}
+
+:root {
+
+    --color1: #CC4A64;
+    --color2: #58C1B8;
+    --colorW: #dfe0df;
+    --colorB: #232323;
+
+}
+
+@keyframes menuItemsMoveIn {
+
+    0% {
+
+        transform: translateX(-120%);
+        transform-origin: 0;
+
+    }
+
+    100% {
+
+        transform: translateX(0px);
+
+    }
+
+}
+
+@keyframes slide {
+
+    0% {
+
+      transform: translateX(20%);
+
+    }
+
+    100% {
+
+      transform: translateX(0px);
+
+    }
+
+}
+
+@keyframes squish {
+
+    0% {
+
+      width: 30px;
+
+    }
+
+    100% {
+
+      width: 100px;
+
+    }
+
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
+
+
+
+/* test css code */
+
+.container{
+
+    overflow:hidden;
+    height: 560px;
+    width: 90vw;
+
+}
+
+.shaped {
+
+    float:left;
+    height:560px;
+    width: calc(80vw - 300px);
+    float:right;
+    background: black url(proj2.jpg) center top no-repeat;
+    background-size: cover;
+    shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    shape-margin: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+
+}
+
+/* Animations */
+
+@keyframes jumpUp {
+
+  0% {
+
+    transform: translateY(10px);
+
+  }
+
+  100% {
+
+    transform: translateX(0px);
+
+  }
+
+}

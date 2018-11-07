@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>MIT Design For America</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="main.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta charset="utf-8">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+
+    <link href="/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+
+  </head>
+
+  <body>
+
+    <div class="topnav" id="topNav">
+      <a href="/index.html" class="logo"><div id="logoContent" class="uncompressed"></div></a>
+      <a href="/about.html" style="margin-right: 20px;">About us</a>
+      <a href="/contact.html">Contact Us</a>
+      <a href="/apply.html">Apply</a>
+      <a href="/events.html">Events</a>
+      <a href="/projects.html">Projects</a>
+      <a href="javascript:void(0);" class="icon logo" onclick="myFunction()">
+        <div id="menuBarButton" style="width: 50px; height: 50px;"><div class="open1"></div><div class="open3"></div><div class="open2"></div></div></div>
+      </a>
+    </div>
+
+    <div style="height: 86px; width: 100%; margin:0"></div>
+
+
+    <div class="banner" style="background-color: #eee; padding-left: 10vw; padding-right: 10vw; min-height: 560px; height: auto; background-image: url(mit.jpg); background-size: cover; background-repeat: no-repeat; background-position: center">
+
+      <div style="width:100%;height:8vw"><!--MARGIN--></div>
+
+      <h1 style="color: var(--colorW); margin: 0; text-align: left;" class="sectionTitle">Creating <x style="color: var(--color2)">social impact</x><br>through <x style="color: var(--color1)">design innovation.</x></h1>
+
+      <h2 style="color: var(--colorW); max-width: 600px; font-weight: normal; font-size: 1.5em;">Using the design process to take on social challenges.</h2>
+
+        <div style="width:100%;height:8vw"><!--MARGIN--></div>
+
+        <div class="arrow" style="position: relative"></div>
+
+        <div style="width:100%;height:30px"><!--MARGIN--></div>
+
+    </div>
+
+
+    <div class="banner" style="background-color: var(--colorB); padding-left: 10vw; padding-right: 10vw; min-height: 400px; height: auto;" id="exec">
+
+      <center>
+
+        <div style="width:100%;height:60px"><!--MARGIN--></div>
+
+        <h1 id="title1" style="color: var(--colorW); margin: 0" class="sectionTitle">Meet <x style="color: var(--color2)">Exec</x></h1>
+
+        <h2 id="desc1" style="color: var(--colorW); max-width: 480px; font-weight: normal; font-size: 1.5em; width: 80vw; height: 90px; border-bottom: var(--colorW) solid 2px;">Creating social impact through engineering and design.</h2>
+
+        <br>
+
+        <div style="width: 80vw;">
+
+          <div style="margin-bottom: 50px;">
+
+            <div class="person"><img src="/people/kelly.png" style="width: 100px; height: 100px;"><h1>Kelly Chen</h1><h2>Copresident</h2></div>
+
+          </div>
+
+            <div class="person" style="background-image: url(/people/miki.png);" id="Miki Hansen%Social Chair"></div>
+            <div class="person alt" style="background-image: url(/people/jenn.png);" id="Jenn Lu%Pub Chair"></div>
+            <div class="person" style="background-image: url(/people/jenna.png);" id="Jenna Hong%Webmaster"></div>
+            <div class="person alt" style="background-image: url(/people/joanna.png);" id="Joanna Cohen%Treasurer"></div>
+
+        </div>
+
+        <script>
+
+          $('.person').mouseover(function() {
+
+             /*data = this.id.split("%");
+
+             $('#title1').html('<x style="color: var(--color2)">' + data[0] + "</x>")
+
+             $('#desc1').html(data[1])*/
+
+          });
+
+          $('.person').mouseout(function() {
+              /*
+              $('#title1').html('Meet <x style="color: var(--color2)">Exec</x>')
+
+              $('#desc1').html("Creating social impact through engineering and design.")*/
+
+          });
+
+          $('.person').click(function() {
+
+            var element_to_scroll_to = $('#exec')[0];
+
+            element_to_scroll_to.scrollIntoView();
+
+            var y = $(window).scrollTop();
+
+            $(window).scrollTop(y-86);
+
+            data = this.id.split("%");
+
+            $('#title1').html('<x style="color: var(--color2)">' + data[0] + "</x>")
+
+            $('#desc1').html(data[1])
+
+            this.addClass('selectedBox');
+
+          });
+
+        </script>
+
+        <div style="margin-bottom: 50px;"></div>
+
+        <div class="buttonDark">Don't Mind Me :)</div>
+
+        <br><br><br>
+
+      </center>
+
+    </div>
+
+
+    <div class="banner" style="background-color: #eee; padding-left: 10vw; padding-right: 10vw; min-height: 400px; height: auto;">
+
+      <center>
+
+        <div style="width:100%;height:60px"><!--MARGIN--></div>
+
+        <h1 style="color: var(--colorB); margin: 0" class="sectionTitle">Our <x style="color: var(--color1)">Teams</x></h1>
+
+        <h2 style="color: var(--colorB); max-width: 480px; font-weight: normal; font-size: 1.5em; width: 80vw">Creating social impact through engineering and design.</h2>
+
+        <br>
+
+        <div style="width: 80vw;">
+
+          <div>
+
+            <div class="person" style="background-image: url(/people/kelly.png);"></div>
+            <div class="person" style="background-image: url(/people/priya.png);"></div>
+            <div class="person" style="background-image: url(/people/emily.png);"></div>
+
+          </div>
+
+            <div class="person" style="background-image: url(/people/kelly.png);"></div>
+            <div class="person" style="background-image: url(/people/priya.png);"></div>
+            <div class="person" style="background-image: url(/people/emily.png);"></div>
+
+        </div>
+
+        <br>
+
+        <div class="buttonAlt">Don't Mind Me :)</div>
+
+        <br><br><br>
+
+      </center>
+
+    </div>
+
+
+    <div style="width: 70vw; margin: 0; background-color: var(--color2); -webkit-transform:translate3d(0,0,0); height: auto; min-height: 0; border-right: 30vw solid var(--color1);" class="banner">
+
+      <center>
+
+        <div style="width:100%;height:40px"><!--MARGIN--></div>
+
+          <div class="social">
+
+            <h2 style="display: inline-block; color: #fff; font-weight: 500; font-family: simple, 'Avenir', 'Arial', sans-serif; text-align: right; margin-right: 30px; margin-left: 30px">MIT<br><x style="font-weight: 900">DFA</x></h2>
+
+          </div>
+
+          <div style="display: inline-block; margin-right: 20px; margin-left: 20px;">
+
+            <div style="display: inline-block;">
+
+              <div class="socialIcon" onclick="window.open('https://www.facebook.com/pages/Design-for-America-MIT/540760426009269', '_blank');">
+
+                <img src="fb.svg" style="height: 33px; margin-bottom: 10px;">
+
+                <h4 style="margin: 0; font-family: simple, 'Avenir', 'Arial', sans-serif; color: #fff">Facebook</h4>
+
+              </div>
+
+              <div class="socialIcon" onclick="window.open('https://instagram.com/mit_dfa', '_blank');">
+
+                <img src="insta.png" style="height: 33px; margin-bottom: 10px">
+
+                <h4 style="margin: 0; font-family: simple, 'Avenir', 'Arial', sans-serif; color: #fff">Instagram</h4>
+
+              </div>
+
+              <div class="socialIcon" onclick="window.open('https://twitter.com/mitdfa', '_blank');">
+
+                <img src="twitter.png" style="height: 33px; margin-bottom: 10px">
+
+                <h4 style="margin: 0; font-family: simple, 'Avenir', 'Arial', sans-serif; color: #fff">Twitter</h4>
+
+              </div>
+
+            </div>
+
+            <div style="display: inline-block;">
+
+              <div class="socialIcon" onclick="window.open('https://www.youtube.com/channel/UC4b427YcIpznBsyMVN28_yw', '_blank');">
+
+                <img src="youtube.png" style="height: 33px; margin-bottom: 10px">
+
+                <h4 style="margin: 0; font-family: simple, 'Avenir', 'Arial', sans-serif; color: #fff">Youtube</h4>
+
+              </div>
+
+              <div class="socialIcon" onclick="window.open('http://mitdfa.tumblr.com/', '_blank');">
+
+                <img src="tumblr.png" style="height: 33px; margin-bottom: 10px">
+
+                <h4 style="margin: 0; font-family: simple, 'Avenir', 'Arial', sans-serif; color: #fff">Tumblr</h4>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        <div style="width:100%;height:40px"><!--MARGIN--></div>
+
+      </center>
+
+      <h2 style="margin: 0; z-index:1; position: absolute; right: -28vw; width:26vw; font-size: 20px; bottom: calc(50% - 60px); height: 100px; color: white; text-align: center; line-height: 30px">© 2018<br>Design for<br>America MIT</h2>
+
+    </div>
+
+  </body>
+
+</html>
