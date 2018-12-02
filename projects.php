@@ -6,29 +6,35 @@
 
   <title>MIT Design For America</title>
 
-  <link rel="stylesheet" href="/resources/style.css">
+  <link rel="stylesheet" href="./resources/style.css">
 
-  <script src="/scripts/main.js"></script>
+  <script src="./scripts/main.js"></script>
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <meta charset="utf-8">
 
-  <link href="/resources/photos/brand/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="./resources/photos/brand/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
-  <link href="/resources/photos/brand/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="./resources/photos/brand/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
 </head>
 
-  <body>
+<?php
+
+#require_once 'teamInfo.php';
+
+?>
+
+  <body style="background-image: url(./resources/photos/misc/tile.png); background-repeat: space; background-size: 150px; space: 5px;">
 
     <div class="topnav" id="topNav">
-      <a href="/index.html" class="logo"><div id="logoContent" class="uncompressed"></div></a>
-      <a href="/about.html" style="margin-right: 20px;">About us</a>
-      <a href="/contact.html">Contact Us</a>
-      <a href="/apply.html">Apply</a>
-      <a href="/events.html">Events</a>
-      <a href="/projects.html" class="active">Projects</a>
+      <a href="./index.html" class="logo"><div id="logoContent" class="uncompressed"></div></a>
+      <a href="./about.html" style="margin-right: 20px;">About us</a>
+      <a href="./contact.html">Contact Us</a>
+      <a href="./apply.html">Apply</a>
+      <a href="./events.html">Events</a>
+      <a href="./projects.html" class="active">Projects</a>
       <a href="javascript:void(0);" class="icon logo" onclick="myFunction()">
         <div id="menuBarButton" style="width: 50px; height: 50px;"><div class="open1"></div><div class="open3"></div><div class="open2"></div></div></div>
       </a>
@@ -46,26 +52,26 @@
 
     <div class="card">
 
-      <div class="cardIm" style="background-color: #4A90E2">
+      <div class="cardIm" style="background-color: #ABCBD6">
 
-        <h3 class="clickBox">mobility</h3>
+        <h3 class="clickBox">Exploration</h3>
 
       </div>
-      <h3>Mobility</h3>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h4>
+      <h3>Explore Opportunities</h3>
+      <h4>Making accessible exploration of opportunities through STEM.</h4>
 
     </div>
 
 
     <div class="card">
 
-      <div class="cardIm" style="background-color: #D0021B">
+      <div class="cardIm" style="background-color: #F5A623">
 
-        <h3 class="clickBox">campus accessibility</h3>
+        <h3 class="clickBox">Mobility On Campus</h3>
 
       </div>
-      <h3>On Campus Accessibility</h3>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h4>
+      <h3>Team Mobility</h3>
+      <h4>We are exploring the problem space of accessibility on campus with a focus on raising awareness...</h4>
 
     </div>
 
@@ -74,11 +80,11 @@
 
       <div class="cardIm" style="background-color: #FF74B9">
 
-        <h3 class="clickBox">Redisigning MIT</h3>
+        <h3 class="clickBox">Group 3</h3>
 
       </div>
-      <h3>Redisigning MIT</h3>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h4>
+      <h3>Group 3</h3>
+      <h4>No Description Provided.</h4>
 
     </div>
 
@@ -86,39 +92,26 @@
 
     <div class="card">
 
-      <div class="cardIm" style="background-color: #F5A623">
+      <div class="cardIm" style="background-color: #D0021B">
 
-        <h3 class="clickBox">volunteering</h3>
+        <h3 class="clickBox">Group 4</h3>
 
       </div>
-      <h3>Volunteering</h3>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h4>
+      <h3>Group 4</h3>
+      <h4>No Description Provided.</h4>
 
     </div>
 
 
     <div class="card">
 
-      <div class="cardIm" style="background-color: #ABCBD6">
+      <div class="cardIm" style="background-color: #4A90E2">
 
-        <h3 class="clickBox">school safety</h3>
-
-      </div>
-      <h3>School Safety</h3>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h4>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="cardIm" style="background-color: #1dbc60">
-
-        <h3 class="clickBox">major options</h3>
+        <h3 class="clickBox">Group 5</h3>
 
       </div>
-      <h3>Major Options</h3>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h4>
+      <h3>Group 5</h3>
+      <h4>No Description Provided.</h4>
 
     </div>
 
@@ -153,7 +146,7 @@
 
               <div class="socialIcon" onclick="window.open('https://www.facebook.com/pages/Design-for-America-MIT/540760426009269', '_blank');">
 
-                <img src="/resources/photos/social/fb.svg" style="height: 33px; margin-bottom: 10px;">
+                <img src="./resources/photos/social/fb.svg" style="height: 33px; margin-bottom: 10px;">
 
                 <h4 style="margin: 0; font-family: simple, 'Avenir', 'Arial', sans-serif; color: #fff">Facebook</h4>
 
@@ -161,7 +154,7 @@
 
               <div class="socialIcon" onclick="window.open('https://instagram.com/mit_dfa', '_blank');">
 
-                <img src="/resources/photos/social/insta.png" style="height: 33px; margin-bottom: 10px">
+                <img src="./resources/photos/social/insta.png" style="height: 33px; margin-bottom: 10px">
 
                 <h4 style="margin: 0; font-family: simple, 'Avenir', 'Arial', sans-serif; color: #fff">Instagram</h4>
 
@@ -169,7 +162,7 @@
 
               <div class="socialIcon" onclick="window.open('https://twitter.com/mitdfa', '_blank');">
 
-                <img src="/resources/photos/social/twitter.png" style="height: 33px; margin-bottom: 10px">
+                <img src="./resources/photos/social/twitter.png" style="height: 33px; margin-bottom: 10px">
 
                 <h4 style="margin: 0; font-family: simple, 'Avenir', 'Arial', sans-serif; color: #fff">Twitter</h4>
 
@@ -181,7 +174,7 @@
 
               <div class="socialIcon" onclick="window.open('https://www.youtube.com/channel/UC4b427YcIpznBsyMVN28_yw', '_blank');">
 
-                <img src="/resources/photos/social/youtube.png" style="height: 33px; margin-bottom: 10px">
+                <img src="./resources/photos/social/youtube.png" style="height: 33px; margin-bottom: 10px">
 
                 <h4 style="margin: 0; font-family: simple, 'Avenir', 'Arial', sans-serif; color: #fff">Youtube</h4>
 
@@ -189,7 +182,7 @@
 
               <div class="socialIcon" onclick="window.open('http://mitdfa.tumblr.com/', '_blank');">
 
-                <img src="/resources/photos/social/tumblr.png" style="height: 33px; margin-bottom: 10px">
+                <img src="./resources/photos/social/tumblr.png" style="height: 33px; margin-bottom: 10px">
 
                 <h4 style="margin: 0; font-family: simple, 'Avenir', 'Arial', sans-serif; color: #fff">Tumblr</h4>
 

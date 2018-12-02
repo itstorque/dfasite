@@ -145,6 +145,8 @@ div.card {
 
   cursor: pointer;
 
+  vertical-align: top;
+
 }
 
 div.card .cardIm {
@@ -200,6 +202,7 @@ div.card h3 {
 div.card h4 {
 
   margin-top: 7px;
+  height: 57px;
 
 }
 
