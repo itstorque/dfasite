@@ -94,7 +94,7 @@ h2 {
   transition: width 0.3s;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(.'/resources/photos/brand/logoMIT2.png');
+  background-image: url('./resources/photos/brand/logoMIT2.png');
 
 }
 
@@ -102,7 +102,7 @@ h2 {
 
   width:95px !important;
   height: 50px;
-  background-image: url(.'/resources/photos/brand/logoMIT2.png') !important;
+  background-image: url('./resources/photos/brand/logoMIT2.png') !important;
 
 }
 
@@ -110,7 +110,7 @@ h2 {
 
   width:190px !important;
   height: 50px;
-  background-image: url(.'/resources/photos/brand/logoMIT2.png') !important;
+  background-image: url('./resources/photos/brand/logoMIT2.png') !important;
 
 }
 
@@ -797,21 +797,21 @@ div.card:hover .cardIm {
 @font-face {
 
     font-family: simple;
-    src: url(./resources/fonts/avenir-roman.ttf);
+    src: url('./resources/fonts/avenir-roman.ttf');
 
 }
 
 @font-face {
 
     font-family: simpleBold;
-    src: url(./resources/fonts/Avenir-Black.ttf);
+    src: url('./resources/fonts/Avenir-Black.ttf');
 
 }
 
 @font-face {
 
     font-family: title;
-    src: url(./resources/fonts/Cloud-Bold.otf);
+    src: url('./resources/fonts/Cloud-Bold.otf');
 
 }
 
@@ -901,7 +901,7 @@ div.card:hover .cardIm {
     height:560px;
     width: calc(80vw - 300px);
     float:right;
-    background: black url(./resources/photos/misc/proj2.jpg) center top no-repeat;
+    background: black url('./resources/photos/misc/proj2.jpg') center top no-repeat;
     background-size: cover;
     shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
     shape-margin: 20px;
